@@ -1,23 +1,28 @@
 const sumAll = function(num1, num2) {
-    let sumOfNum1AndNum2 = num1 + num2;
+    let totalResult = 0;
     if (num2 < num1) {
         let i = num2;
         } else {
         i = num1;
         }; 
         while (i !== num1 || i !== num2) {
-        return totalResult = sumOfNum1AndNum2 += i
+        totalResult += i;
         }
-        i++
+        i++;
+        return totalResult += (num1 + num2);
     }
 
-totalResult = sumAll
+    
 
-Implement a function that takes 2 positive integers and returns the sum of every integer between (and including) them:
+    sumAll(5, 10)
+
+//Get sum of the argument numbers. Begin loop at the least of the two argument numbers
+//Increment until the counter reaches the higher number
+//Use addition assignment operator to add each count to the sum of the numbers as the new total result
 
 
 
-//Initialize counter based on which number is lower
+
 
 
 
