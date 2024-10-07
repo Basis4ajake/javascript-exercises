@@ -1,14 +1,16 @@
 const sumAll = function(min, max){
-    if (min < 0 || max < 0 || min !== Number || max !== Number || min % 1 !== 0 || max % 1 !== 0) {
+    if (min < 0 || max < 0 || typeof min != 'number' || typeof max != 'number' || min % 1 != 0 || max % 1 != 0){
         throw e;
-    } else if (min > max) {
+    } else if ((min > max) && (min >= 0) && (max >= 0) && (min % 1 === 0) && (max % 1 === 0 && min )) {
         return totalSum = (min + max) * (min-max+1)/2;
-    } else {
+    } else if ((min >= 0) && (max >= 0) && (min % 1 === 0) && (max % 1 === 0)) {
         return totalSum = (min + max) * (max-min+1)/2;
     } 
 }
 
-const e = Error('ERROR');
+
+const e = Error('ERROR')
+
 
 // Do not edit below this line
 module.exports = sumAll;
