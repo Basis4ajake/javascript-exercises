@@ -1,10 +1,14 @@
 const sumAll = function(min, max){
-    if (min > max) {
-        return totalSum = (min + max)/2 * (min-max+1);
+    if (min < 0 || max < 0 || min !== Number || max !== Number) {
+        throw e;
+    } else if (min > max) {
+        return totalSum = (min + max) * (min-max+1)/2;
     } else {
-        return totalSum = (min + max)/2*(max-min+1);
-    }
+        return totalSum = (min + max) * (max-min+1)/2;
+    } 
 }
+
+const e = Error('ERROR');
 
 // Do not edit below this line
 module.exports = sumAll;
