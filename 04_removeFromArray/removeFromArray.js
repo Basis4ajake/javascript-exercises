@@ -1,18 +1,9 @@
-// const removeFromArray = function (myArray, ...itemsToRemove) {
-//   for (const item of itemsToRemove) {
-//     index = myArray.indexOf(item)
-//     myArray.splice(index, 1)
-//     return myArray;
-//   }
-//   }
-
 const removeFromArray = function (myArray, ... itemsToRemove) {
   filteredArray = myArray.filter(item => !itemsToRemove.includes(item))
   return filteredArray; 
 }
 
 myList = [1, 2, 3, 4];
-mySecondList= [1, 2, 3, 4];
 
 removeFromArray(myList, 3)
 removeFromArray(myList, 2, 3)
